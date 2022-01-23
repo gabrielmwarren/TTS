@@ -39,6 +39,8 @@ if (isChrome) {
     if (speech.onvoiceschanged !== undefined) {
         speech.onvoiceschanged = getVoices;
     }
+} else {
+    getVoices()
 }
 
 function play() {
